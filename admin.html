@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LiveWeb Admin Panel</h1>
+        <div class="form-group">
+            <label for="url-input">WebView URL</label>
+            <input type="url" id="url-input" placeholder="https://example.com">
+        </div>
+        <div class="form-group">
+            <label for="button-text-input">Button Text</label>
+            <input type="text" id="button-text-input" placeholder="Click Here">
+        </div>
+        <div class="form-group">
+            <label for="title-text-input">Page Title</label>
+            <input type="text" id="title-text-input" placeholder="My Awesome App">
+        </div>
+        <button id="save-button">Save Changes</button>
+        <p id="status-message"></p>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- Your Scripts -->
+    <script src="config.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
